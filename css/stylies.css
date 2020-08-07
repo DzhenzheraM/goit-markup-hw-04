@@ -24,8 +24,9 @@ ul {
 .header-nav {
   display: flex;
   align-items: center;
+  height: 80px;
 
-  width: 1200px;
+  width: 1170px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -87,25 +88,41 @@ ul {
 
 .head-nav .link-phone {
   color: var(--secondary-color);
+  fill: var(--secondary-color);
+
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-weight: 500;
   text-decoration: none;
 }
-.head-nav .link-phone:hover,
-.head-nav .link-phone:focus {
-  color: var(--accent-color);
-}
 
 .main {
   background-color: #ffffff;
 }
-
+.link-phone .icon-letter {
+  width: 16px;
+  height: 11.2px;
+  margin: 0;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.link-phone .icon-phone {
+  width: 10px;
+  height: 15px;
+  margin: 0;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.link-phone:hover,
+.link-phone:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
 /* Блок с заказом услуг */
 
 .container {
-  width: 1200px;
+  width: 1170px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -114,10 +131,11 @@ ul {
 }
 
 h1 {
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: auto;
+  padding-left: 237px;
+  padding-right: 237px;
+  padding-top: 200px;
+  padding-bottom: 30px;
   width: 696px;
 
   font-weight: 900;
@@ -126,7 +144,7 @@ h1 {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--secondary-color);
+  color: #ffffff;
 }
 .button {
   border-radius: 4px;
@@ -141,7 +159,18 @@ h1 {
   background-color: var(--accent-color);
   color: #ffffff;
 }
-
+.section-order {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--secondary-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../img/Header.jpg);
+}
 /* Блок с преимуществоми нашей компании */
 
 .list-advantage {
@@ -157,16 +186,35 @@ h1 {
 .list-advantage .style + .style {
   margin-left: 30px;
 }
-.icon {
+.style .icon {
   background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
   width: 270px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
 }
+.antenna {
+  background-image: url(../img/antenna.svg);
+}
+
+.clock {
+  background-image: url(../img/clock.svg);
+}
+
+.diagrama {
+  background-image: url(../img/diagram.svg);
+}
+
+.astronaut {
+  background-image: url(../img/astronaut.svg);
+}
 .icon .img {
   margin: 25px 100px;
 }
+
 .section-advantage .title {
   margin: 0;
   margin-bottom: 10px;
@@ -211,6 +259,7 @@ h1 {
 .section-services .caption {
   font-size: 14px;
   line-height: 1.14;
+  font-weight: 600;
   text-align: center;
   text-transform: uppercase;
 }
@@ -232,6 +281,10 @@ h1 {
   background-color: #ffffff;
   width: 270px;
   height: 422px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .style-img {
   display: block;
@@ -265,14 +318,10 @@ h1 {
   color: var(--secondary-color);
 }
 
-.section-team .link:hover,
-.section-team .link:focus {
-  color: var(--accent-color);
-}
-.section-team .link {
-  display: block;
-  text-decoration: none;
-  padding: 12px;
+.icon-social {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
 }
 
 .social {
@@ -280,14 +329,21 @@ h1 {
   margin-left: 32px;
   margin-right: 32px;
 }
-.social-logo {
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0;
-  background-color: var(--accent-color);
+.social-logo .link {
+  display: inline-flex;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
-  border-radius: 25px;
+  border-radius: 50px;
+}
+.social-logo .link:hover,
+.social-logo .link:focus {
+  background-color: var(--accent-color);
+}
+.social-logo .link:hover .icon-social {
+  fill: #ffffff;
 }
 
 .social .social-logo + .social-logo {
@@ -301,13 +357,23 @@ h1 {
 .list-firm {
   display: flex;
 }
-.list-firm .style {
+
+.style .link-firm {
   width: 170px;
   height: 90px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  padding-top: 22px;
+}
+
+.link-firm:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 .list-firm .style + .style {
   margin-left: 30px;
@@ -329,6 +395,7 @@ h1 {
 
 .footer-list .style {
   text-align: left;
+  width: 230px;
 }
 
 .web-studio-footer {
@@ -356,7 +423,7 @@ h1 {
   text-decoration: none;
 }
 .footer-list .style + .style {
-  margin-left: 60px;
+  margin-left: 70px;
 }
 
 .footer .text {
@@ -365,6 +432,8 @@ h1 {
   line-height: 1.71;
   color: #ffffff;
   font-style: normal;
+  width: 230px;
+  margin-right: 0;
 }
 
 .footer .link-phone {
@@ -388,27 +457,21 @@ h1 {
   margin-left: 0px;
 }
 
-.footer-logo .footer-list {
-  background-color: var(--accent-color);
-  width: 44px;
-  height: 44px;
-  border-radius: 25px;
+.footer-list .icon-social {
+  fill: #ffffff;
 }
 .footer-list .link {
-  display: block;
-  padding-top: 12px;
-  padding-left: 18px;
-  color: #ffffff;
+  display: inline-flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
 }
 
 .footer-logo .footer-list + .footer-list {
   margin-left: 10px;
-}
-
-.social-logo .link {
-  display: block;
-  text-decoration: none;
-  padding: 12px;
 }
 
 .footer .link-phone:hover,
@@ -416,13 +479,9 @@ h1 {
   color: var(--accent-color);
 }
 
-.footer .link {
-  text-decoration: none;
-}
-
 .footer .link:hover,
 .footer .link:focus {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .footer .title {
@@ -436,7 +495,7 @@ h1 {
   color: #ffffff;
 }
 
-.footer .mail {
+/*.footer .mail {
   display: block;
   width: 47px;
   margin: 0px;
@@ -473,6 +532,12 @@ h1 {
   text-align: center;
   letter-spacing: 0.06em;
 }
+.icon-footer {
+  height: 24px;
+  width: 24px;
+  margin-left: 10px;
+}*/
+
 /*Секция с навигационными кнопками*/
 .hidden {
   visibility: hidden;

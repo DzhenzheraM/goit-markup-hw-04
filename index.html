@@ -30,14 +30,18 @@
         <ul class="head-nav phone">
           <li class="item-phone">
             <a href="mailto:info@devstudio.com" class="link-phone">
-              <img src="./img/envelope.svg" alt="значек почты" />
-              info@devstudio.com</a
-            >
+              <svg class="icon-letter">
+                <use xlink:href="./img/sprite.svg#letter"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="item-phone">
             <a href="tel:380961111111" class="link-phone"
-              ><img src="./img/smartphone.svg" alt="значек телефона" /> +38 096
-              111 11 11</a
+              ><svg class="icon-phone">
+                <use xlink:href="./img/sprite.svg#phone"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -56,9 +60,7 @@
         <div class="container">
           <ul class="list-advantage">
             <li class="style">
-              <div class="icon">
-                <img class="img" src="./img/antenna.svg" alt="логотип антены" />
-              </div>
+              <div class="icon antenna"></div>
               <h2 class="title">Внимание к деталям</h2>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по
@@ -66,9 +68,7 @@
               </p>
             </li>
             <li class="style">
-              <div class="icon">
-                <img class="img" src="./img/clock.svg" alt="логотип часов" />
-              </div>
+              <div class="icon clock"></div>
               <h2 class="title">Пунктуальность</h2>
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения
@@ -76,13 +76,7 @@
               </p>
             </li>
             <li class="style">
-              <div class="icon">
-                <img
-                  class="img"
-                  src="./img/diagram.svg"
-                  alt="логотип графика"
-                />
-              </div>
+              <div class="icon diagrama"></div>
               <h2 class="title">Планирование</h2>
               <p class="text">
                 Равным образом консультация с широким активом в значительной
@@ -90,13 +84,7 @@
               </p>
             </li>
             <li class="style">
-              <div class="icon">
-                <img
-                  class="img"
-                  src="./img/astronaut.svg"
-                  alt="логотип космонафта"
-                />
-              </div>
+              <div class="icon astronaut"></div>
               <h2 class="title">Современные технологии</h2>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -113,11 +101,11 @@
           <ul class="list-services">
             <li class="style">
               <img src="./img/nout.jpg" alt="фото ноутбука" width="370" />
-              <h3 class="caption">Десктопные приложения</h3>
+              <!--<h3 class="caption">Десктопные приложения</h3>-->
             </li>
             <li class="style">
               <img src="./img/telefon.jpg" alt="фото смартфона" width="370" />
-              <h3 class="caption">Мобильные приложения</h3>
+              <!--<h3 class="caption">Мобильные приложения</h3>-->
             </li>
             <li class="style">
               <img
@@ -125,7 +113,7 @@
                 alt="фото экрана монитора"
                 width="370"
               />
-              <h3 class="caption">Дизайнерские решения</h3>
+              <!--<h3 class="caption">Дизайнерские решения</h3>-->
             </li>
           </ul>
         </div>
@@ -138,24 +126,40 @@
             <li class="style">
               <img
                 class="style-img"
-                src="./our_team/Nikolai.jpg"
+                src="./our_team/igor.jpg"
                 alt=" фото Николая Кучеренко"
                 width="270"
               />
-              <h3 class="caption">Николай Кучеренко</h3>
+              <h3 class="caption">Игорь Демьяненко</h3>
               <p class="text">Product Designer</p>
               <ul class="social">
                 <li class="social-logo">
-                  <a href="" aria-label="лого-инстаграма" class="link">и </a>
+                  <a href="" aria-label="лого-инстаграма" class="link">
+                    <svg class="icon-social">
+                      <use xlink:href="./img/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-logo">
-                  <a href="" aria-label="лого-твиттера" class="link">т</a>
+                  <a href="" aria-label="лого-твиттера" class="link">
+                    <svg class="icon-social">
+                      <use xlink:href="./img/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-logo">
-                  <a href="" aria-label="лого-фейсбука" class="link">ф</a>
+                  <a href="" aria-label="лого-фейсбука" class="link">
+                    <svg class="icon-social">
+                      <use xlink:href="./img/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-logo">
-                  <a href="" aria-label="лого-линкин" class="link">л</a>
+                  <a href="" aria-label="лого-линкин" class="link">
+                    <svg class="icon-social">
+                      <use xlink:href="./img/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
@@ -166,68 +170,116 @@
                 alt="фото Ольги Ивановой"
                 width="270"
               />
-              <h3 class="caption">Ольга Иванова</h3>
+              <h3 class="caption">Ольга Репина</h3>
               <p class="text">Frontend Developer</p>
               <ul class="social">
                 <li class="social-logo">
-                  <a href="" aria-label="лого-инстаграма" class="link">и </a>
+                  <a href="" aria-label="лого-инстаграма" class="link">
+                    <svg class="icon-social">
+                      <use xlink:href="./img/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-logo">
-                  <a href="" aria-label="лого-твиттера" class="link">т</a>
+                  <a href="" aria-label="лого-твиттера" class="link">
+                    <svg class="icon-social">
+                      <use xlink:href="./img/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-logo">
-                  <a href="" aria-label="лого-фейсбука" class="link">ф</a>
+                  <a href="" aria-label="лого-фейсбука" class="link">
+                    <svg class="icon-social">
+                      <use xlink:href="./img/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-logo">
-                  <a href="" aria-label="лого-линкин" class="link">л</a>
+                  <a href="" aria-label="лого-линкин" class="link">
+                    <svg class="icon-social">
+                      <use xlink:href="./img/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
             <li class="style">
               <img
                 class="style-img"
-                src="./our_team/Andrei.jpg"
+                src="./our_team/nikolai.jpg"
                 alt="фото Андрея Шевченко"
                 width="270"
               />
-              <h3 class="caption">Андрей Шевченко</h3>
+              <h3 class="caption">Николай Тарасов</h3>
               <p class="text">Marketing</p>
               <ul class="social">
                 <li class="social-logo">
-                  <a href="" aria-label="лого-инстаграма" class="link">и </a>
+                  <a href="" aria-label="лого-инстаграма" class="link">
+                    <svg class="icon-social">
+                      <use xlink:href="./img/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-logo">
-                  <a href="" aria-label="лого-твиттера" class="link">т</a>
+                  <a href="" aria-label="лого-твиттера" class="link">
+                    <svg class="icon-social">
+                      <use xlink:href="./img/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-logo">
-                  <a href="" aria-label="лого-фейсбука" class="link">ф</a>
+                  <a href="" aria-label="лого-фейсбука" class="link">
+                    <svg class="icon-social">
+                      <use xlink:href="./img/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-logo">
-                  <a href="" aria-label="лого-линкин" class="link">л</a>
+                  <a href="" aria-label="лого-линкин" class="link">
+                    <svg class="icon-social">
+                      <use xlink:href="./img/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
             <li class="style">
               <img
                 class="style-img"
-                src="./our_team/Ivan.jpg"
+                src="./our_team/mihail.jpg"
                 alt="фото Ивана Николаева"
                 width="270"
               />
-              <h3 class="caption">Иван Николаев</h3>
+              <h3 class="caption">Михаил Ермаков</h3>
               <p class="text">UI Designer</p>
               <ul class="social">
                 <li class="social-logo">
-                  <a href="" aria-label="лого-инстаграма" class="link">и </a>
+                  <a href="" aria-label="лого-инстаграма" class="link">
+                    <svg class="icon-social">
+                      <use xlink:href="./img/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-logo">
-                  <a href="" aria-label="лого-твиттера" class="link">т</a>
+                  <a href="" aria-label="лого-твиттера" class="link">
+                    <svg class="icon-social">
+                      <use xlink:href="./img/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-logo">
-                  <a href="" aria-label="лого-фейсбука" class="link">ф</a>
+                  <a href="" aria-label="лого-фейсбука" class="link">
+                    <svg class="icon-social">
+                      <use xlink:href="./img/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-logo">
-                  <a href="" aria-label="лого-линкин" class="link">л</a>
+                  <a href="" aria-label="лого-линкин" class="link">
+                    <svg class="icon-social">
+                      <use xlink:href="./img/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
@@ -240,52 +292,46 @@
           <h2 class="title">Постоянные клиенты</h2>
           <ul class="list-firm">
             <li class="style">
-              <a href=""
-                ><img
-                  class="img"
-                  src="./clientele/logo-1.svg"
-                  alt="логотип компании 1"
-              /></a>
+              <a href="" class="link-firm">
+                <svg class="icon-firm" width="44.27" height="49.23">
+                  <use xlink:href="./img/sprite.svg#logo-1"></use>
+                </svg>
+              </a>
             </li>
             <li class="style">
-              <a href=""
-                ><img
-                  class="img"
-                  src="./clientele/logo-2.svg"
-                  alt="логотип компании 2"
-              /></a>
+              <a href="" class="link-firm">
+                <svg class="icon-firm" width="40" height="52">
+                  <use xlink:href="./img/sprite.svg#logo-2"></use>
+                </svg>
+              </a>
             </li>
             <li class="style">
-              <a href=""
-                ><img
-                  class="img"
-                  src="./clientele/logo-3.svg"
-                  alt="логотип компании 3"
-              /></a>
+              <a href="" class="link-firm">
+                <svg class="icon-firm" width="41" height="42.6">
+                  <use xlink:href="./img/sprite.svg#logo-3"></use>
+                </svg>
+              </a>
             </li>
             <li class="style">
-              <a href=""
-                ><img
-                  class="img"
-                  src="./clientele/logo-4.svg"
-                  alt="логотип компании 4"
-              /></a>
+              <a href="" class="link-firm">
+                <svg class="icon-firm" width="79.66" height="42">
+                  <use xlink:href="./img/sprite.svg#logo-4"></use>
+                </svg>
+              </a>
             </li>
             <li class="style">
-              <a href=""
-                ><img
-                  class="img"
-                  src="./clientele/logo-5.svg"
-                  alt="логотип компании 5"
-              /></a>
+              <a href="" class="link-firm">
+                <svg class="icon-firm" width="59" height="47">
+                  <use xlink:href="./img/sprite.svg#logo-5"></use>
+                </svg>
+              </a>
             </li>
             <li class="style">
-              <a href=""
-                ><img
-                  class="img"
-                  src="./clientele/logo-6.svg"
-                  alt="логотип компании 6"
-              /></a>
+              <a href="" class="link-firm">
+                <svg class="icon-firm" width="88.48" height="45.44">
+                  <use xlink:href="./img/sprite.svg#logo-6"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -319,29 +365,47 @@
             <h2 class="title">присоединяйтесь</h2>
             <ul class="footer-logo">
               <li class="footer-list">
-                <a href="" aria-label="логотип-инстаграма" class="link">и</a>
+                <a href="" aria-label="лого-инстаграма" class="link">
+                  <svg class="icon-social">
+                    <use xlink:href="./img/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
               <li class="footer-list">
-                <a href="" aria-label="логотип-твиттера" class="link">т</a>
+                <a href="" aria-label="лого-твиттера" class="link">
+                  <svg class="icon-social">
+                    <use xlink:href="./img/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
               <li class="footer-list">
-                <a href="" aria-label="логотип-фейсбука" class="link">ф</a>
+                <a href="" aria-label="лого-фейсбука" class="link">
+                  <svg class="icon-social">
+                    <use xlink:href="./img/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
               </li>
               <li class="footer-list">
-                <a href="" aria-label="логотип-линкин" class="link">л</a>
+                <a href="" aria-label="лого-линкин" class="link">
+                  <svg class="icon-social">
+                    <use xlink:href="./img/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </li>
-          <li class="style subscription">
+          <!--<li class="style subscription">
             <h2 class="title">Подпишитесь на рассылку</h2>
             <p class="mail">E-mail</p>
           </li>
           <li class="style">
             <button class="footer-btn" type="button">
               Подписаться
-              <img src="./logo/icon-send.svg" alt="логотип отправки почты" />
+              <svg class="icon-footer">
+                <use xlink:href="./img/sprite.svg#icon-send"></use>
+              </svg>
             </button>
-          </li>
+          </li>-->
         </ul>
       </div>
     </footer>
